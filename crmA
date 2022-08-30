@@ -1,0 +1,10 @@
+WebDriver driver=new ChromeDriver();
+		driver.get("https://demo.actitime.com/login.do");
+	
+		
+		String actualtitle=driver.getTitle();
+		String expectedtitle="actiTIME - Login";
+		
+		Assert.assertEquals(actualtitle,expectedtitle);
+		System.out.println(actualtitle);
+	}
